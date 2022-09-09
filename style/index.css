@@ -109,3 +109,6 @@ nav ul li a:hover::after {
 }
 .toggle:checked {
 }
+#location {
+  font-size: 13px;
+}
