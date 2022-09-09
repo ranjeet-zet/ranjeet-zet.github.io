@@ -5,8 +5,8 @@ var typing = new Typed("#slide-text", {
     "JavaScript developer.",
     "Frontend developer.",
   ],
-  typeSpeed: 30,
-  backSpeed: 40,
+  typeSpeed: 80,
+  backSpeed: 90,
   loop: true,
 });
 
