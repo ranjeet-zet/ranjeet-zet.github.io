@@ -13,6 +13,7 @@ html {
   --red: #ff004f;
   --black: #080808;
   --white: #fff;
+  --span: #fff;
 }
 body {
   background: var(--black);
@@ -114,6 +115,7 @@ nav ul li a:hover::after {
 }
 #location {
   font-size: 13px;
+  color: var(--span);
 }
 
 /* ////////////////////////About  */
@@ -171,7 +173,7 @@ nav ul li a:hover::after {
   font-size: large;
 }
 .tab-contents ul li span {
-  color: rgba(145, 132, 132, 0.714);
+  color: var(--span);
   font-size: 14px;
 }
 .tab-contents {

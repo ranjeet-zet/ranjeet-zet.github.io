@@ -49,6 +49,7 @@ function light() {
   document.getElementById("header").style.backgroundSize = "cover";
   // document.querySelector("#header").style.background = "white";
   document.documentElement.style.setProperty("--white", "#080808");
+  document.documentElement.style.setProperty("--span", "#319DA0");
   aa = false;
 }
 function dark() {
@@ -61,6 +62,7 @@ function dark() {
   document.getElementById("header").style.backgroundSize = "cover";
   // document.getElementById("#header").style.backgroundSize = "cover";
   document.documentElement.style.setProperty("--white", "#fff");
+  document.documentElement.style.setProperty("--span", "#fff");
   aa = true;
 }
 
