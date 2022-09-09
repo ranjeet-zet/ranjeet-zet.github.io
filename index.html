@@ -20,8 +20,8 @@
             <nav>
                 <h1 id="logo">RANJEET</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
@@ -35,8 +35,54 @@
             </div>
         </div>
     </div>
-
-
+    <!-- ////////////Here We will Add about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque est et possimus! Id quisquam ad
+                        adipisci sequi eligendi autem asperiores expedita, maxime impedit at delectus. Excepturi cum non
+                        reprehenderit doloremque.
+                        Iusto rem mollitia deleniti repellendus qui modi. Illum quaerat consequuntur corrupti deleniti
+                        consequatur sequi quod laudantium sed pariatur ullam. Eos reiciendis eveniet excepturi molestiae
+                        sint veniam nam asperiores minus corporis!</p>
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java Devloper</span><br>Java Backend Devloper</li>
+                            <li><span>JavaScript Devloper</span><br>JavaScript Web Devloper</li>
+                            <li><span>Web Devlopment</span><br>HTML/CSS/JavaScript Devloper</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java Backend</span><br>300+ hours of coding</li>
+                            <li><span>JavaScript</span><br>In JavaScript wrote 10000+ lines of Code</li>
+                            <li><span>Web Devlopment</span><br>In HTML/CSS/JavaScript wrote 500000+ lines of code</li>
+                            <li><span>DSA</span><br>In DSA solved 500+ problem</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Full Stack Devloper Apri 2022 </span><br>Masai School</li>
+                            <li><span>B-tech (Electrical and Electronics Engineering)</span><br>Gulzar Group of
+                                Insititutes</li>
+                            <li><span>intermediate (10+2)</span><br>Zila School Saharsa</li>
+                            <li><span>NCC</span><br>NCC Alumni ( C Certificate )</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

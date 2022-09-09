@@ -43,6 +43,7 @@ toggle.addEventListener("change", () => (aa ? light() : dark()));
 function light() {
   toggle.checked = true;
   document.getElementById("header").style.transition = "2s";
+  document.querySelector("body").style.background = "#fff";
   document.querySelector("#header").style.background =
     "url(../image/home-day.jpg)" || imagearr[1];
   document.getElementById("header").style.backgroundSize = "cover";
@@ -52,6 +53,7 @@ function light() {
 }
 function dark() {
   toggle.checked = false;
+  document.querySelector("body").style.background = "#080808";
   document.getElementById("header").style.transition = "2s";
   document.querySelector("#header").style.background =
     "url(../image/home.jpg)" || imagearr[0];
@@ -86,3 +88,18 @@ window.onload = (event) => {
       });
   });
 };
+
+////////////////////////////
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
