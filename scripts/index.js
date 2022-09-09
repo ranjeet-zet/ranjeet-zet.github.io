@@ -105,3 +105,13 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+//////////////////
+
+document.getElementById("chat-boat").addEventListener("click", function () {
+  window.open(
+    "https://wa.me/+919162690495?text=Hi%20Ranjeet%20I,m%20Looking%20a%20Java%20Devloper",
+    "new_window"
+  );
+  // window.location.href = "https://wa.me/9162690495?text=Hello";
+});
