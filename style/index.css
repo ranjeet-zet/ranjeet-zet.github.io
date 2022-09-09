@@ -4,20 +4,22 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
+  animation-delay: 2s;
 }
 :root {
   --red: #ff004f;
   --black: #080808;
+  --white: #fff;
 }
 body {
   background: var(--black);
-  color: #fff;
+  color: var(--white);
 }
 #header {
   width: 100%;
   height: 100vh;
-  background: url(../image/home.jpg);
   background-size: cover;
+  /* background: url(../image/home.jpg); */
 }
 .container {
   padding: 20px 20px;
@@ -39,7 +41,7 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -66,10 +68,44 @@ nav ul li a:hover::after {
   font-size: 30px;
 }
 .header-text > h2 {
-  /* color: var(--red); */
+  color: var(--red);
   font-size: 60px;
   margin-top: 16px;
-  background: linear-gradient(to right, #e5e7e7 0%, #ff004f 40%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+/* // magic */
+.toggle {
+  --size: 1.5rem;
+
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  width: var(--size);
+  height: var(--size);
+  box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+  border-radius: 999px;
+  color: hsl(240, 100%, 95%);
+
+  transition: all 500ms;
+}
+.toggle:checked {
+  --ray-size: calc(var(--size) * -0.4);
+  --offset-orthogonal: calc(var(--size) * 0.65);
+  --offset-diagonal: calc(var(--size) * 0.45);
+
+  transform: scale(0.75);
+  color: hsl(40, 100%, 50%);
+  box-shadow: inset 0 0 0 var(--size),
+    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
+    var(--offset-orthogonal) 0 0 var(--ray-size),
+    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
+    0 var(--offset-orthogonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0
+      var(--ray-size),
+    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
+    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
+}
+.toggle:checked {
 }
