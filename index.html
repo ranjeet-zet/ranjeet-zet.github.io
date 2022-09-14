@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RANJEET</title>
     <link rel="stylesheet" href="./style/index.css">
+    <script src="https://kit.fontawesome.com/80c6070dea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,14 +23,16 @@
         <div class="container">
             <nav>
                 <h1 id="logo">RANJEET</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#services">Tech Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <input id="toggle" class="toggle" type="checkbox">
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p id="location"></p>
@@ -85,6 +88,195 @@
             </div>
         </div>
     </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Tech Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>
+                        JavaScript
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>
+                        HTML
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>
+                        CSS
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>
+                        JAVA
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        Spring Boot
+                    </h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h2>
+                        Git
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- -----------------------------portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="./image/serhome.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Seence.com
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime pariatur officiis, quo
+                            recusandae fugiat dolore.
+                        </p>
+                        <div class="try">
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/serhome.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Seence.com
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime pariatur officiis, quo
+                            recusandae fugiat dolore.
+                        </p>
+                        <div class="try">
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/serhome.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Seence.com
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime pariatur officiis, quo
+                            recusandae fugiat dolore.
+                        </p>
+                        <div class="try">
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/serhome.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Seence.com
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime pariatur officiis, quo
+                            recusandae fugiat dolore.
+                        </p>
+                        <div class="try">
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/serhome.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Seence.com
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime pariatur officiis, quo
+                            recusandae fugiat dolore.
+                        </p>
+                        <div class="try">
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/serhome.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Seence.com
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime pariatur officiis, quo
+                            recusandae fugiat dolore.
+                        </p>
+                        <div class="try">
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#portfolio" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!-- ////////////////Contact////////// -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub.titale">
+                        Contact Me
+                    </h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>ranjeet030200@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-phone"></i>+91 9162690495</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a class="btn btn2" href="./image/ranjeet_kumar_Resume.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Your Emain" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ranjeet.<i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
