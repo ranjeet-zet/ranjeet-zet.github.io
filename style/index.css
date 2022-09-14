@@ -37,6 +37,7 @@ nav {
 #logo {
   color: var(--red);
   cursor: pointer;
+
   margin-left: 22px;
 }
 nav ul li {
@@ -184,6 +185,10 @@ nav ul li a:hover::after {
 }
 #about p {
   color: var(--white);
+}
+#about-text {
+  width: 95%;
+  text-align: justify;
 }
 
 /* ///////////////////////// */
