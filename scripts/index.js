@@ -45,7 +45,7 @@ function light() {
   document.getElementById("header").style.transition = "2s";
   document.querySelector("body").style.background = "#fff";
   document.querySelector("#header").style.background =
-    "url(../image/home-day.jpg)" || imagearr[1];
+    imagearr[1] || "url(../image/home-day.jpg)";
   document.getElementById("header").style.backgroundSize = "cover";
   // document.querySelector("#header").style.background = "white";
   document.documentElement.style.setProperty("--white", "#080808");
@@ -57,7 +57,7 @@ function dark() {
   document.querySelector("body").style.background = "#080808";
   document.getElementById("header").style.transition = "2s";
   document.querySelector("#header").style.background =
-    "url(../image/home.jpg)" || imagearr[0];
+    imagearr[0] || "url(../image/home.jpg)";
 
   document.getElementById("header").style.backgroundSize = "cover";
   // document.getElementById("#header").style.backgroundSize = "cover";
@@ -115,3 +115,7 @@ document.getElementById("chat-boat").addEventListener("click", function () {
   );
   // window.location.href = "https://wa.me/9162690495?text=Hello";
 });
+
+function headerrefer() {
+  window.location.reload();
+}
