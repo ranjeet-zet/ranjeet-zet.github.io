@@ -50,6 +50,8 @@ function light() {
   // document.querySelector("#header").style.background = "white";
   document.documentElement.style.setProperty("--white", "#080808");
   document.documentElement.style.setProperty("--span", "#319DA0");
+  document.documentElement.style.setProperty("--icon", "#319DA0");
+  document.documentElement.style.setProperty("--work", "#319DA0");
   aa = false;
 }
 function dark() {
@@ -63,6 +65,8 @@ function dark() {
   // document.getElementById("#header").style.backgroundSize = "cover";
   document.documentElement.style.setProperty("--white", "#fff");
   document.documentElement.style.setProperty("--span", "#fff");
+  document.documentElement.style.setProperty("--icon", "#262626");
+  document.documentElement.style.setProperty("--work", "#080808");
   aa = true;
 }
 
