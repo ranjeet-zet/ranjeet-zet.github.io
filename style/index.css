@@ -436,10 +436,6 @@ nav .fa-solid {
   font-weight: 300;
   color: #ff004f;
 }
-.calendar .ContributionCalendar-label {
-  /* font-weight: 300; */
-  color: #ff004f;
-}
 /* ///////////////////////////////////   css for small screen */
 @media only screen and (max-width: 600px) {
   #header {
