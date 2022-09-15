@@ -44,8 +44,8 @@ function light() {
   toggle.checked = true;
   document.getElementById("header").style.transition = "2s";
   document.querySelector("body").style.background = "#fff";
-  document.querySelector("#header").style.background =
-    imagearr[1] || "url(../image/home-day.jpg)";
+  // document.querySelector("#header").style.background =
+  //   imagearr[1] || "url(../image/white.jpg)";
   document.getElementById("header").style.backgroundSize = "cover";
   // document.querySelector("#header").style.background = "white";
   document.documentElement.style.setProperty("--white", "#080808");
@@ -58,8 +58,8 @@ function dark() {
   toggle.checked = false;
   document.querySelector("body").style.background = "#080808";
   document.getElementById("header").style.transition = "2s";
-  document.querySelector("#header").style.background =
-    imagearr[0] || "url(../image/home.jpg)";
+  // document.querySelector("#header").style.background =
+  //   imagearr[0] || "url(../image/black.jpg)";
 
   document.getElementById("header").style.backgroundSize = "cover";
   // document.getElementById("#header").style.backgroundSize = "cover";
