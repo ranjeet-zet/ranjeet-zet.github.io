@@ -225,7 +225,7 @@ h1 {
 }
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
   grid-gap: 40px;
   margin-top: 50px;
@@ -453,7 +453,7 @@ nav .fa-solid {
     font-size: 25px;
   }
   nav ul {
-    background: #ff004f;
+    background: #319da0;
     position: fixed;
     top: 0;
     right: -200px;
@@ -470,10 +470,19 @@ nav .fa-solid {
   #toggle {
     margin: 20px;
   }
-  nav ul .fa-solid {
+  nav ul .fa-bars {
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: 90%;
     cursor: pointer;
+  }
+  nav ul .fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    cursor: pointer;
+  }
+  .calendar {
+    display: none;
   }
 }
