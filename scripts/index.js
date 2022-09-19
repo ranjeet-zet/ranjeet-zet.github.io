@@ -72,28 +72,28 @@ function dark() {
 
 //////////
 
-window.onload = (event) => {
-  navigator.geolocation.getCurrentPosition((position) => {
-    let lat = position.coords.latitude;
-    let long = position.coords.longitude;
+// window.onload = (event) => {
+//   navigator.geolocation.getCurrentPosition((position) => {
+//     let lat = position.coords.latitude;
+//     let long = position.coords.longitude;
 
-    console.log(lat, long);
-    let cityurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e783b82949a3bcda42bf44dc5f338847`;
+//     console.log(lat, long);
+//     let cityurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e783b82949a3bcda42bf44dc5f338847`;
 
-    fetch(cityurl)
-      .then(function (ele) {
-        return ele.json();
-      })
-      .then(function (ele) {
-        console.log(ele);
-        let temp = ele.main.temp - 273;
-        temp = temp.toFixed(2);
-        document.getElementById(
-          "location"
-        ).innerText = `${ele.name} Current Temperature is ${temp} °C`;
-      });
-  });
-};
+//     fetch(cityurl)
+//       .then(function (ele) {
+//         return ele.json();
+//       })
+//       .then(function (ele) {
+//         console.log(ele);
+//         let temp = ele.main.temp - 273;
+//         temp = temp.toFixed(2);
+//         document.getElementById(
+//           "location"
+//         ).innerText = `${ele.name} Current Temperature is ${temp} °C`;
+//       });
+//   });
+// };
 
 ////////////////////////////
 var tablinks = document.getElementsByClassName("tab-links");

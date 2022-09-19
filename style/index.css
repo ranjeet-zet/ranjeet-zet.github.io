@@ -224,6 +224,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: auto;
   cursor: pointer;
+  z-index: 55;
 }
 #chat-boat:hover {
   cursor: pointer;
