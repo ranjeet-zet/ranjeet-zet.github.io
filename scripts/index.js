@@ -72,6 +72,8 @@ function dark() {
 
 //////////
 
+///////////Block location permision.
+
 // window.onload = (event) => {
 //   navigator.geolocation.getCurrentPosition((position) => {
 //     let lat = position.coords.latitude;
