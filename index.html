@@ -347,6 +347,43 @@
 
 
 <script>
+    // GitHubCalendar(".calendar", "ranjeetmasaischool", {
+    //     responsive: true,
+    //     global_stats: false,
+    //     tooltips: true,
+    // });
+
+    // // Use a proxy
+    // GitHubCalendar(".calendar", "ranjeetmasaischool", {
+    //     proxy(username) {
+    //         return fetch(`https://your-proxy.com/github?user=${username}`)
+    //     }
+    // }).then(r => r.text())
+
+
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1_DecmZUSKi-2iFueb-3dAxuFkQejHwsiWCavksgxF5sT6F2tWyHYufmwTgJPxD7zA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        msg.innerText = "Wait..."
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerText = "Message sent successfully"
+
+                setTimeout(() => {
+                    msg.innerText = "";
+                }, 4000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+
+</script>
+<script>
     GitHubCalendar(".calendar", "ranjeetmasaischool", {
         responsive: true,
         global_stats: false,
@@ -373,23 +410,4 @@
             }
         );
     });
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1_DecmZUSKi-2iFueb-3dAxuFkQejHwsiWCavksgxF5sT6F2tWyHYufmwTgJPxD7zA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                msg.innerText = "Message sent successfully"
-
-                setTimeout(() => {
-                    msg.innerText = "";
-                }, 4000)
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-
 </script>
