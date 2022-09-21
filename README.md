@@ -20,7 +20,7 @@
 </p>
 
 <!-- hero screenshot -->
-![demo](https://user-images.githubusercontent.com/76105799/190883603-c888ebc3-9ef6-44d2-a8f1-0ed67bb5e4f5.png)
+![demo](https://github.com/ranjeetmasaischool/ranjeetmasaischool.github.io/blob/main/image/HomeRedmi.png)
 
 ## Features 📋
 ⚡️ Minimal Design\
