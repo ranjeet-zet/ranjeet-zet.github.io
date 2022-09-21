@@ -347,19 +347,32 @@
 
 
 <script>
-    GitHubCalendar(".calendar", "ranjeetmasaischool");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "ranjeetmasaischool", { responsive: true });
-
-    // Use a proxy
     GitHubCalendar(".calendar", "ranjeetmasaischool", {
-        proxy(username) {
-            return fetch(`https://your-proxy.com/github?user=${username}`)
-        }
-    }).then(r => r.text())
+        responsive: true,
+        global_stats: false,
+        tooltips: true,
+    });
 
+    $(".counting").each(function () {
+        var $this = $(this),
+            countTo = $this.attr("data-count");
 
+        $({ countNum: $this.text() }).animate(
+            {
+                countNum: countTo,
+            },
+            {
+                duration: 3000,
+                easing: "linear",
+                step: function () {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $this.text(this.countNum);
+                },
+            }
+        );
+    });
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1_DecmZUSKi-2iFueb-3dAxuFkQejHwsiWCavksgxF5sT6F2tWyHYufmwTgJPxD7zA/exec'
     const form = document.forms['submit-to-google-sheet']
