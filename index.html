@@ -24,28 +24,30 @@
     <div id="chat-boat">
         <!-- Chat Boat For WhatsApp -->
     </div>
+    <nav>
+        <h1 id="logo">RANJEET</h1>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Tech Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <input id="toggle" class="toggle" type="checkbox">
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
     <div id="header">
-
-        <div class="container">
-            <nav>
-                <h1 id="logo">RANJEET</h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Tech Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <input id="toggle" class="toggle" type="checkbox">
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+        <div class="container  container1">
             <div class="header-text">
-                <p id="location"></p>
+                <!-- <p id="location"></p> -->
                 <h3>Hi I'm Ranjeet Kumar</h3>
-                <h2>I'm <span id="slide-text"></span></h2>
+                <h2 id="slidertext">I'm <span id="slide-text"></span></h2>
                 <a class="btn btn2" id="resumedown" href="./image/ranjeet_kumar_Resume.pdf" download>Download CV</a>
             </div>
+        </div>
+        <div class="img-wrapper" id="image">
+            <img src="./image/Ranjeet400.png" alt="">
         </div>
     </div>
     <!-- ////////////Here We will Add about -->
@@ -303,8 +305,9 @@
         Loading the data just for you.
     </div>
     <!-- ////////////////Contact////////// -->
-    <div style=" width: 95%;margin: auto;" id="contact">
+    <div id="contact">
         <div class="container">
+            <h1 class="sub-title">Contact</h1>
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub.titale">
@@ -323,7 +326,7 @@
                     <a class="btn btn2" href="./image/ranjeet_kumar_Resume.pdf" download>Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form class="loading" name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>

@@ -52,6 +52,7 @@ function light() {
   document.documentElement.style.setProperty("--span", "#319DA0");
   document.documentElement.style.setProperty("--icon", "#319DA0");
   document.documentElement.style.setProperty("--work", "#319DA0");
+  document.documentElement.style.setProperty("--image", "#fff");
   aa = false;
 }
 function dark() {
@@ -67,6 +68,7 @@ function dark() {
   document.documentElement.style.setProperty("--span", "#fff");
   document.documentElement.style.setProperty("--icon", "#262626");
   document.documentElement.style.setProperty("--work", "#080808");
+  document.documentElement.style.setProperty("--image", "#080808");
   aa = true;
 }
 

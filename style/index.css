@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins";
   box-sizing: border-box;
   animation-delay: 2s;
 }
@@ -19,16 +20,18 @@ html {
   --icon: #262626;
   --work: #000;
   --workarea: #262626;
+  --image: #fff;
 }
 body {
   background: var(--black);
   color: var(--white);
+  /* position: relative; */
 }
 #header {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background: url(../image/homefinal.png);
+  /* background: url(../image/homefinal.png); */
 }
 .container {
   padding: 20px 20px;
@@ -37,13 +40,24 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   flex-wrap: wrap;
+  background-color: #319da0;
+  padding: 10px 20px;
+  /* border-radius: 0 0 10px 10px; */
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
 }
 #logo {
   color: var(--red);
   cursor: pointer;
 
-  margin-left: 22px;
+  /* margin-left: 22px; */
 }
 nav ul li {
   display: inline-block;
@@ -72,6 +86,59 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+/* ////////////////Header Image */
+#header {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+#header img {
+  height: 100%;
+  /* border-radius: 50%; */
+}
+.img-wrapper {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -80px;
+  background-image: conic-gradient(#ff004f 30deg, transparent 120deg);
+  animation: rotate 2s linear infinite;
+}
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background-image: url(/image/Ranjeet400.png);
+  background-color: var(--image);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+#image {
+  /* border: 1px solid red; */
+  height: 400px;
+  width: 400px;
+  /* border-radius: 10%; */
+  overflow: hidden;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* Image End ............................................... */
+
 .header-text {
   margin-left: 22px;
   margin-top: 20%;
@@ -133,6 +200,7 @@ h1 {
   color: var(--red);
   width: 90%;
   margin: auto;
+  margin-bottom: 50px;
 }
 .row {
   display: flex;
@@ -210,6 +278,9 @@ h1 {
   text-align: justify;
 }
 
+#contact {
+  padding: 80px 0px;
+}
 /* ///////////////////////// */
 #chat-boat {
   position: fixed;
@@ -235,9 +306,10 @@ h1 {
 /* //////////Services// */
 
 #services {
-  padding: 30px 0px;
+  padding: 80px 0px;
   width: 95%;
   margin: auto;
+  /* margin-bottom: 30px; */
 }
 .services-list {
   display: grid;
@@ -270,7 +342,7 @@ h1 {
 /* ////////////////////////portfolio/////////////// */
 
 #portfolio {
-  padding: 50px 0;
+  padding: 80px 0px;
   width: 95%;
   margin: auto;
 }
@@ -457,8 +529,18 @@ nav .fa-solid {
 
 /* ///////////////////////////////////   css for small screen */
 @media only screen and (max-width: 600px) {
+  nav {
+    /* background-color: transparent; */
+    border-radius: 0;
+  }
+  #resumedown {
+    display: none;
+  }
+  #slidertext {
+    font-size: 40px;
+  }
   #header {
-    background: url(../image/phonefinal\ -\ Copy.png);
+    /* background: url(../image/phonefinal\ -\ Copy.png); */
   }
   .header-text {
     margin-top: 50%;
@@ -551,6 +633,21 @@ nav .fa-solid {
   .contact-right {
     flex-basis: 100%;
   }
+  #header {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+  }
+  .container1 {
+    width: 90%;
+    height: 60%;
+  }
+  #image {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    background-image: url(/image/Ranjeet.png);
+  }
 }
 #msg {
   color: #319da0;
@@ -558,3 +655,5 @@ nav .fa-solid {
   display: block;
   text-align: center;
 }
+
+/* //////////////////////////////// */
