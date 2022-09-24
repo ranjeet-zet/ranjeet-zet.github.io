@@ -28,7 +28,8 @@
 ⚡️ Dedicated Contact Form\
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
-⚡️ Efficient Code
+⚡️ Efficient Code\
+⚡️ Dark Mode
 
 ## Sections 📚
 ✔️ Hero\
@@ -58,7 +59,4 @@ This repositoty is fully Open Source, Feel free to fork this, yes you heard it r
 - Clone your repo and modify the content of <b>index.html</b> according to your requirement.
 - To deploy your website, keep the repo name `<your-github-username>.github.io`. (Please don't give any other name)
 - Push the generated code to the `master` branch of this repository.
-
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
 
