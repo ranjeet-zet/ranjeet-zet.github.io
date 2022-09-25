@@ -109,7 +109,8 @@ nav ul li a:hover::after {
   position: absolute;
   inset: -80px;
   background-image: conic-gradient(#ff004f 30deg, transparent 120deg);
-  animation: rotate 2s linear infinite;
+  background-color: #319da0;
+  animation: rotate 2.5s linear infinite;
 }
 .img-wrapper::after {
   content: "";

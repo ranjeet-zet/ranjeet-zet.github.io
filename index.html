@@ -329,7 +329,7 @@
                     <form class="loading" name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Name" required>
                         <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <textarea minlength="5" required name="Message" rows="6" placeholder="Your Message"></textarea>
                         <span id="msg"></span>
                         <button class="btn btn2" type="submit">Submit</button>
                     </form>
@@ -372,7 +372,7 @@
 
     form.addEventListener('submit', e => {
         e.preventDefault()
-        msg.innerText = "Wait..."
+        msg.innerText = "Sending..."
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
                 msg.innerText = "Message sent successfully"
