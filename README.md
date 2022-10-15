@@ -31,7 +31,7 @@
 ⚡️ Efficient Code\
 ⚡️ Dark Mode
 
-## Sections 📚
+## Sections 
 ✔️ Hero\
 ✔️ About Me\
 ✔️ Skills\
