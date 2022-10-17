@@ -31,7 +31,7 @@
 ⚡️ Efficient Code\
 ⚡️ Dark Mode
 
-## Sections 📚
+## Sections 
 ✔️ Hero\
 ✔️ About Me\
 ✔️ Skills\
@@ -44,7 +44,7 @@ Check this out, **[Live URL](https://ranjeetmasaischool.github.io/)**
 ## Tech Stacks & Tools Used 🛠️
 [![My Skills](https://skills.thijs.gg/icons?i=html,css,javascript,git,github,vscode&theme=light)](#)
 
-## Contribution Guidelines 💡
+## Contribution Guidelines 
 
 - 🍴 Fork this repo!
 - 👯 Clone this repo to your local machine.
