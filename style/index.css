@@ -545,7 +545,19 @@ nav .fa-solid {
 }
 
 /* ///////////////////////////////////   css for small screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  .layer {
+    height: 50%;
+  }
+  .layer h3 {
+    font-size: 16px;
+  }
+  .layer p {
+    font-size: 12px;
+  }
+  .layer i {
+    font-size: 14px;
+  }
   nav {
     /* background-color: transparent; */
     border-radius: 0;
@@ -692,3 +704,17 @@ nav .fa-solid {
   margin-top: 50px;
   gap: 30px;
 }
+/* @media only screen and (max-width: 800px) {
+  .layer {
+    height: 40%;
+  }
+  .layer h3 {
+    font-size: 16px;
+  }
+  .layer p {
+    font-size: 12px;
+  }
+  .layer i {
+    font-size: 14px;
+  }
+} */
