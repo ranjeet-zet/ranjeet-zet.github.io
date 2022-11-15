@@ -8,6 +8,12 @@
   animation-delay: 2s;
 }
 
+.navresume {
+  background-color: #ff004f;
+  padding: 8px 22px;
+  border-radius: 4px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +27,9 @@ html {
   --work: #000;
   --workarea: #262626;
   --image: #fff;
+}
+.navresume:hover {
+  color: #fff;
 }
 body {
   background: var(--black);
@@ -85,6 +94,9 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
   width: 100%;
+}
+.navresume:hover::after {
+  width: 0%;
 }
 /* ////////////////Header Image */
 #header {
