@@ -25,14 +25,17 @@
         <!-- Chat Boat For WhatsApp -->
     </div>
     <nav>
-        <h1 id="logo">RANJEET</h1>
+        <h1 id="logo" class="testing">RANJEET</h1>
         <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Tech Skills</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a class="navresume" href="./image/Ranjeet-Kumar-Resume.pdf" download>Download CV</a>
+            <li class="referresume"><a class="navresume"
+                    href="https://drive.google.com/uc?export=download&id=1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM"
+                    download>Download
+                    CV</a>
             </li>
             <input id="toggle" class="toggle" type="checkbox">
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -45,7 +48,8 @@
                 <!-- <p id="location"></p> -->
                 <h3>Hi I'm Ranjeet Kumar</h3>
                 <h2 id="slidertext">I'm <span id="slide-text"></span></h2>
-                <a class="btn btn2" id="resumedown" href="./image/Ranjeet-Kumar-Resume.pdf" download>Download CV</a>
+                <a class="btn btn2 referresume1" id="resumedown" href="./image/Ranjeet-Kumar-Resume.pdf"
+                    download>Download CV</a>
             </div>
         </div>
         <div class="img-wrapper" id="image">
@@ -350,7 +354,8 @@
                         <a target="_blank" href="https://github.com/ranjeetmasaischool/ranjeetmasaischool.github.io/"><i
                                 class="fa-solid fa-code-fork"></i></i></a>
                     </div>
-                    <a class="btn btn2" href="./image/Ranjeet-Kumar-Resume.pdf" download>Download CV</a>
+                    <a class="btn btn2 referresume2" href="./image/Ranjeet-Kumar-Resume.pdf" download>Download
+                        CV</a>
                 </div>
                 <div class="contact-right">
                     <form class="loading" name="submit-to-google-sheet">
@@ -390,7 +395,20 @@
     //     }
     // }).then(r => r.text())
 
+    document.querySelector(".referresume").addEventListener("click", function () {
+        window.open("https://drive.google.com/file/d/1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM/view?usp=share_link", "_blank");
+        // window.location.href = "https://drive.google.com/file/d/1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM/view?usp=share_link"
+    });
 
+    document.querySelector(".referresume1").addEventListener("click", function () {
+        window.open("https://drive.google.com/file/d/1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM/view?usp=share_link", "_blank");
+        // window.location.href = "https://drive.google.com/file/d/1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM/view?usp=share_link"
+    });
+
+    document.querySelector(".referresume2").addEventListener("click", function () {
+        window.open("https://drive.google.com/file/d/1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM/view?usp=share_link", "_blank");
+        // window.location.href = "https://drive.google.com/file/d/1Kwk2OVHLmQ_0n8GX9D8ihsDQV0QLuPVM/view?usp=share_link"
+    });
 
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1_DecmZUSKi-2iFueb-3dAxuFkQejHwsiWCavksgxF5sT6F2tWyHYufmwTgJPxD7zA/exec'
