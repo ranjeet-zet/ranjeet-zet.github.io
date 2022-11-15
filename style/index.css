@@ -670,3 +670,21 @@ nav .fa-solid {
 }
 
 /* //////////////////////////////// */
+
+.githubstats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+  width: 100%;
+}
+.githubmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
